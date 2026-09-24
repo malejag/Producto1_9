@@ -1,11 +1,78 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Mi primer sitio web</title>
+
+    <style>
+        body {
+            margin: 0;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: Arial, sans-serif;
+            background: linear-gradient(135deg, #667eea, #764ba2);
+        }
+
+        .contenedor {
+            background: white;
+            padding: 40px;
+            border-radius: 20px;
+            text-align: center;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+        }
+
+        h1 {
+            color: #5a4fcf;
+            font-size: 45px;
+            margin-bottom: 10px;
+        }
+
+        p {
+            color: #555;
+            font-size: 18px;
+        }
+
+        button {
+            margin-top: 20px;
+            padding: 12px 25px;
+            border: none;
+            border-radius: 10px;
+            background: #667eea;
+            color: white;
+            font-size: 16px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        button:hover {
+            background: #764ba2;
+            transform: scale(1.05);
+        }
+    </style>
 </head>
+
 <body>
-    <h1>Hola mundo</h1>
+
+    <div class="contenedor">
+        <h1>👋 ¡Hola Mundo!</h1>
+
+        <p>
+            Bienvenido a mi primera página web.
+        </p>
+
+        <button onclick="saludar()">
+            Haz clic aquí
+        </button>
+    </div>
+
+    <script>
+        function saludar() {
+            alert("🎉 ¡Hola! Bienvenido a mi página web.");
+        }
+    </script>
+
 </body>
 </html>
